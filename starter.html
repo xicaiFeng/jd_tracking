@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Starter</title>
+  <!-- Tell the browser to be responsive to screen width -->
+
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+  <!--myCss-------------------------------------------------------------------------------------3.1-->
+  <link rel="stylesheet" type="text/css" href="dist/css/public.css"/>
+ <link rel="stylesheet" type="text/css" href="dist/css/style.css"/>	
+<!--<link rel="stylesheet" type="text/css" href="dist/css/starter3.1.css"/>-->
+	<!--myCss-------------------------------------------------------------------------------------3.1-->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="starter.html" class="logo">
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img src="dist/img/lg.png"/></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+     
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+         
+         <li class="user user-menu userLoginMenu" >
+            <!-- Menu Toggle Button -->
+            <a href="#" data-toggle="modal" data-target="#myModal">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs" >登录</span>
+            </a>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li class="successLogin">
+          	<a ><span class="hidden-xs" >admin1</span></a>  
+          	<!--用户名称-->
+          </li>
+        </ul>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <!-- Optionally, you can add icons to the links -->
+        <!--<li class="slidebarItem"><a><i class="fa fa-link"></i> <span>品牌分析</span></a></li>
+        <li class="slidebar_subItem"><a><span>1.关注指数</span></a></li>
+        <li class="slidebar_subItem"><a><span>2.购买指数</span></a></li>
+        <li class="slidebar_subItem"><a><span>3.口碑指数</span></a></li>
+        <li class="slidebarItem"><a><i class="fa fa-link"></i> <span>竞品分析</span></a></li>
+        <li class="slidebar_subItem"><a><span>1.竞品关系图</span></a></li>
+        <li class="slidebar_subItem"><a><span>2.商品重叠率</span></a></li>
+        <li class="slidebarItem"><a><i class="fa fa-link"></i> <span>品牌转化率</span></a></li>
+        <li class="slidebar_subItem"><a><span>1.流入流出图</span></a></li>-->
+       <li class="slidebarItem" slidebar="品牌分析" >
+          <a  class=""><i class="glyphicon glyphicon-signal"></i> <span>品牌分析</span>
+          	<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="subslidebarItem">
+            <li><a href="#">1.用户品牌偏好Top20</a></li>
+            <li><a href="#">2.重复购物分布</a></li>
+            <li><a href="#">3.用户尺码偏好</a></li>
+            <li><a href="#">4.用户价格偏好</a></li>
+             <li><a href="#">5.用户关联消费偏好</a></li>
+              <li><a href="#">6.用户商品偏好</a></li>
+          </ul>
+        </li>
+       <li class="slidebarItem" slidebar="竞品分析">
+          <a  class=""><i class="glyphicon glyphicon-signal"></i> <span>竞品分析</span>
+          	<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="subslidebarItem">
+            <li><a href="#brandSelation">1.多品牌重合率</a></li>
+            <li><a href="#compareBrand">2.两两品牌重合率</a></li>
+          </ul>
+        </li>
+       <li class="slidebarItem" slidebar="品牌转化率">
+          <a  class=""><i class="glyphicon glyphicon-signal"></i> <span>品牌转化率</span>
+          	<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="subslidebarItem">
+            <li><a href="#leftPanel">1.品牌流入</a></li>
+            <li><a href="#leftPanel">2.品牌流出</a></li>
+          </ul>
+        </li>
+        <li class="slidebarItem" slidebar="影响因素分析">
+          <a  class=""><i class="glyphicon glyphicon-signal"></i> <span>影响因素分析</span>
+          	<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="subslidebarItem">
+            <li><a href="#">1.销量影响因素</a></li>
+            <li><a href="#">2.关注影响因素</a></li>
+            <li><a href="#">3.口碑影响因素</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <i id="navTitle">竞品分析</i>
+      </h1>
+      <!--<ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>-->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+			<!--fxc 3.1--------------------------------------------------------------------------------------->
+			<!--三级导航开始------------------ajax需要请求该数据-->
+				<!--<div class="tabelNav">
+					
+					<div class="firstNav">
+						<b>一、</b>
+						<span class="active">服装</span>
+					</div>
+					<div class="secondNav">
+						<b>二、</b>
+						<span class="active">上衣</span>
+						<span>裤子</span>
+					</div>
+					<div class="thirdNav">
+						<b>三、</b>
+						<span class="active">针织衫</span>
+						<span>T恤</span>
+						<span>卫衣</span>
+						<span>正装衬衫</span>
+					</div>
+				</div>-->
+				
+					
+				<!--三级导航结束-->
+				
+				
+				<!--第一部分图表品牌分析-->
+				<!--第一部分图表结束-->
+				
+				<!--第二部分图表竞品分析-->
+				<!--<div class="echartsBox">
+					我的工作区域              --------------------------
+					<div class="echarts">
+						<div id="brandSelation" style="height:400px"></div>
+					</div>	
+					<div class="echarts">
+						<!--品牌下拉菜单------------------------------------------------
+						<div class="selectedBrand">
+							<ul class="leftbBrand selectedItem">
+									
+									<img hoversrc="dist/img/selected/arrow1.png" leavesrc="dist/img/selected/arrow.png" src="dist/img/selected/arrow.png"/>
+							</ul>
+							<ul class="rightBrand selectedItem">
+									<img hoversrc="dist/img/selected/arrow1.png" leavesrc="dist/img/selected/arrow.png" src="dist/img/selected/arrow.png"/>
+							</ul>
+							<div class="seoSelectedBrand">
+								查询<img src="dist/img/selected/seo.png"/>
+							</div>
+						</div>
+						<div class="compareBrand">
+							
+							<div class="compareBrandType" id="compareBrand"  style="height:400px"></div>
+							
+						</div>
+					</div>
+				</div>
+				<!--第二部分图表结束-->
+				<!--第三部分图表品牌转换率-
+				<div class="echartsBox">
+					<div class="echarts">
+				<!-- Your Page Content Here --------------------------
+					</div>	
+				</div>	---->			
+				<!--第三部分图表结束-->
+				<!--第四部分图表影响因素分析-->
+				<!--第四部分图表结束-->
+			
+      
+			<!--fxc 3.1-------------------------------------------------------------------------------------->
+    
+    	<!-- Your Page Content Here -->
+        <div class="container">
+            <div id="selector">
+              <div class="selectorLine">
+                <div class="sl-parentkey">
+                  First Catalog：
+                </div>
+                <div class="sl-subkey">
+                  <ul>
+                    <li class="selected">服饰</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="selectorLine">
+                <div class="sl-parentkey">
+                  Second Catalog：
+                </div>
+                <div class="sl-subkey">
+                  <ul>
+                    <li class="selected">男装</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="selectorLine">
+                <div class="sl-parentkey">
+                  Third Catalog：
+                </div>
+                <div class="sl-subkey sl-subkey-event" id="work">
+                  <ul>
+                    <li class="sl-subkey-selected selected" id="casual">休闲裤</li>
+                    <li class="sl-subkey-selected" id="western">西裤</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="echartBox showEchart showEchartTwo">	
+				            	<!-- Info boxes -->
+				            	<!--所占比例图例-->
+				      <div class="row">
+				        <!-- /.col -->
+				        <div class="col-md-4 col-sm-6 col-xs-12">
+				          <div class="info-box">
+				            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+				
+				            <div class="info-box-content">
+				              <span class="info-box-text">品均占有率</span>
+				              <span class="info-box-number">10%</span>
+				            </div>
+				            <!-- /.info-box-content -->
+				          </div>
+				          <!-- /.info-box -->
+				        </div>
+				        <!-- /.col -->
+				
+				        <!-- fix for small devices only -->
+				        <div class="clearfix visible-sm-block"></div>
+				
+				        <div class="col-md-4 col-sm-6 col-xs-12">
+				          <div class="info-box">
+				            <span class="info-box-icon bg-green"><i class="glyphicon glyphicon-transfer"></i></span>
+				
+				            <div class="info-box-content">
+				              <span class="info-box-text">品均重叠率</span>
+				              <span class="info-box-number">10%</span>
+				            </div>
+				            <!-- /.info-box-content -->
+				          </div>
+				          <!-- /.info-box -->
+				        </div>
+				        <!-- /.col -->
+				        <div class="col-md-4 col-sm-6 col-xs-12">
+				          <div class="info-box">
+				            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+				
+				            <div class="info-box-content">
+				              <span class="info-box-text">品牌数量</span>
+				              <span class="info-box-number">10</span>
+				            </div>
+				            <!-- /.info-box-content -->
+				          </div>
+				          <!-- /.info-box -->
+				        </div>
+				        <!-- /.col -->
+				      </div>
+				      <!-- /.row -->
+
+            	<div class="echarts">
+								<div id="brandSelation" style="height:400px"></div>
+								<ul class="btandSelationLegend">
+									<li>所占比例：</li>
+									<li><span style="background: #da1b73;"></span>>0.15</li>
+									<li><span style="background: #1b91da;"></span>0.10~0.15</li>
+									<li><span style="background: #ae1bba;"></span>0.05~0.10</li>
+									<li><span style="background: #73da1b;"></span>0~0.05</li>
+									
+									<li>
+											
+									</li>
+								</ul>
+								
+								
+								
+            	</div>	
+							<div class="echarts">
+								<!--品牌下拉菜单--------------------------------------------------ajax-->
+								<div class="selectedBrand ">
+									
+									<p class="selectedTitle">商品重叠率</p>
+									<div class="dropdown leftbBrand selectedItem">
+									  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" brandId="0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									    九牧王
+									    <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu dropdownMenuItem" aria-labelledby="dropdownMenu1">
+									    
+									  </ul>
+									</div>
+									<div class="dropdown rightBrand selectedItem">
+									  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" brandId="1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									   	战地吉普 
+									    <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu dropdownMenuItem" aria-labelledby="dropdownMenu2">
+									    
+									  </ul>
+									</div>
+									<!--<ul class="leftbBrand selectedItem">
+											
+											<img hoversrc="dist/img/selected/arrow1.png" leavesrc="dist/img/selected/arrow.png" src="dist/img/selected/arrow.png"/>
+									</ul>
+									<ul class="rightBrand selectedItem">
+											<img hoversrc="dist/img/selected/arrow1.png" leavesrc="dist/img/selected/arrow.png" src="dist/img/selected/arrow.png"/>
+									</ul>-->
+									<div class="seoSelectedBrand btn">
+										查询
+									</div>
+								</div>
+								<div class="compareBrand">
+							
+									<div class="compareBrandType" id="compareBrand"  style="height:400px"></div>
+							
+								</div>
+							</div>
+            </div>
+            <div class="echartBox showEchartThree">
+	            <div class="item">
+	              <div id="leftPanel" style="float: left;width: 100%;height:100%;"></div>
+	            </div>
+	            <div class="item">
+	              <div id="rightPanel" style="float: left;width: 100%;height:100%;"></div>
+	            </div>
+            </div>
+          
+        </div>  
+    	 
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+      <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+        <h3 class="control-sidebar-heading">Recent Activity</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+              <div class="menu-info">
+                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+                <p>Will be 23 on April 24th</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+        <h3 class="control-sidebar-heading">Tasks Progress</h3>
+        <ul class="control-sidebar-menu">
+          <li>
+            <a href="javascript:;">
+              <h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="pull-right-container">
+                  <span class="label label-danger pull-right">70%</span>
+                </span>
+              </h4>
+
+              <div class="progress progress-xxs">
+                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!-- /.control-sidebar-menu -->
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Stats tab content -->
+      <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+        <form method="post">
+          <h3 class="control-sidebar-heading">General Settings</h3>
+
+          <div class="form-group">
+            <label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+            <p>
+              Some information about this general settings option
+            </p>
+          </div>
+          <!-- /.form-group -->
+        </form>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="_login-wrap">
+        <div class="_login-html">
+          <input id="tab-1" type="radio" name="tab" class="_sign-in" checked><label for="tab-1" class="_tab">登 录</label>
+          <input id="tab-2" type="radio" name="tab" class="_sign-up"><label for="tab-2" class="_tab">注 册</label>
+          <div class="_login-form">
+            <div class="_sign-in-htm">
+              <div class="_group">
+                <label for="user" class="_label">用户名</label>
+                <input  type="text" id="loginUser" placeholder="用户名（中文英文数字下划线4~16位字符）" class="_input _input_login userName">
+              </div>
+              <div class="_group">
+                <label for="pass" class="_label">密码</label>
+                <input  type="password" id="loginPWD" placeholder="密码（英文数字下划线4~16位字符）" class="_input _input_login" data-type="password">
+              </div>
+              <div class="_group">
+                <input id="check" type="checkbox" class="_check" id="checkRemember" checked>
+                <label for="check"><span class="_icon"></span> 记住我</label>
+              </div>
+              <div class="_group">
+                <input type="submit" class="_button"  id="loginIn" value="登 录">
+              </div>
+              <div class="_hr"></div>
+              <div class="_foot-lnk">
+                <a href="#forgot">忘记密码?</a>
+              </div>
+            </div>
+            <div class="_sign-up-htm">
+              <div class="_group">
+                <label for="user" class="_label">用户名</label>
+                <input id="regUser" placeholder="用户名（中文英文数字下划线4~16位字符）" type="text" class="_input _input_reg">
+              </div>
+              <div class="_group">
+                <label for="pass" class="_label">密码</label>
+                <input id="regPWD" type="password" placeholder="密码（英文数字下划线4~16位字符）" class="_input _input_reg" data-type="password">
+              </div>
+              <div class="_group">
+                <label for="pass" class="_label" >再次输入密码</label>
+                <input id="repeatRegPWD" type="password" placeholder="两次输入密码请保持一致" class="_input _input_reg" data-type="password">
+              </div>
+              <div class="_group">
+                <label for="pass" class="_label">邮箱</label>
+                <input id="regEmail" type="text" placeholder="请输入有效的邮箱地址" class="_input _input_reg">
+              </div>
+              <div class="_group">
+                <input type="submit" class="_button" id="register" value="注 册">
+              </div>
+              <div class="_hr"></div>
+            </div>
+          </div>
+          <div class="_login-bg"></div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+     <script type="text/javascript" src="dist/js/brandCommon.js"></script>
+     
+     <!--需要引入的echart文件------------------------------------------------------------------------------------------->
+     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>
+    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+   <script src="dist/js/competingData.js"></script><!-- //数据文件-->
+   <!--需要引入的echart文件------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="dist/js/layer/need/layer.css"/>
+    <script src="dist/js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="dist/js/echart2.js"></script>
+		<script type="text/javascript" src="dist/js/brandTakeRatesData.js"></script>
+		<script src="dist/js/login.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

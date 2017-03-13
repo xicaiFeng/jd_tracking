@@ -1,0 +1,393 @@
+{
+    "nodes": [
+        {
+            "color": "#000",
+            "label": "九牧王",
+            "attributes": {},
+            "y": -504.26147,
+            "x": -939.36383,
+            "id": "1",
+            "size": 33
+        },
+        {
+            "color": "#000",
+            "label": "战地吉普",
+            "attributes": {},
+            "y": -862.7517,
+            "x": -134.2215,
+            "id": "2",
+            "size": 22
+        },
+        {
+            "color": "#c71969",
+            "label": "南极人",
+            "attributes": {},
+            "y": -534.4221,
+            "x": -15.53079,
+            "id": "3",
+            "size": 22
+        },
+        {
+            "color": "#c71969",
+            "label": "比菲力",
+            "attributes": {},
+            "y": 624.50604,
+            "x": -818.97516,
+            "id": "4",
+            "size": 11
+        },
+        {
+            "color": "#c71919",
+            "label": "丹顿公子",
+            "attributes": {},
+            "y": 120.37976,
+            "x": -710.59204,
+            "id": "5",
+            "size": 22
+        },
+        {
+            "color": "#c71969",
+            "label": "杰森迪亚",
+            "attributes": {},
+            "y": -112.5541,
+            "x": 101.52897,
+            "id": "6",
+            "size": 44
+        },
+        {
+            "color": "#c71969",
+            "label": "花花公子",
+            "attributes": {},
+            "y": -556.3107,
+            "x": 602.1166,
+            "id": "7",
+            "size": 15
+        },
+        {
+            "color": "#1984c7",
+            "label": "丹杰仕",
+            "attributes": {},
+            "y": 378.15536,
+            "x": -1150.2018,
+            "id": "8",
+            "size": 19
+        },
+        {
+            "color": "#c76919",
+            "label": "班尼路",
+            "attributes": {},
+            "y": 477.03778,
+            "x": -127.03764,
+            "id": "9",
+            "size": 18
+        },
+        {
+            "color": "#8419c7",
+            "label": "真维斯",
+            "attributes": {},
+            "y": -404.62427,
+            "x": -338.03128,
+            "id": "10",
+            "size": 28.163814
+        }],
+        "edges": [
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "2",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "3",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "4",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "5",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "6",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "1",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+         
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "3",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "4",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "5",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "6",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "2",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+       
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "4",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "5",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "6",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "3",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "5",
+            "size": 1
+        },
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "6",
+            "size": 1
+        },
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "4",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+       
+        {
+            "sourceID": "5",
+            "attributes": {},
+            "targetID": "6",
+            "size": 1
+        },
+        {
+            "sourceID": "5",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "5",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "5",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "5",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+       
+        {
+            "sourceID": "6",
+            "attributes": {},
+            "targetID": "7",
+            "size": 1
+        },
+        {
+            "sourceID": "6",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "6",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "6",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+        {
+            "sourceID": "7",
+            "attributes": {},
+            "targetID": "8",
+            "size": 1
+        },
+        {
+            "sourceID": "7",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "7",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+        
+        {
+            "sourceID": "8",
+            "attributes": {},
+            "targetID": "9",
+            "size": 1
+        },
+        {
+            "sourceID": "8",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        },
+        
+        
+        
+        {
+            "sourceID": "9",
+            "attributes": {},
+            "targetID": "10",
+            "size": 1
+        }
+]}
+        

@@ -1,0 +1,9 @@
+##  模拟数据在 dist/js/competingData.json dist/js/inflowOutflow.json 图表数据都是根据这里面加载的
+
+##  处理数据，初始化模块二图表：dist/js/competingData.js
+##  模块三图表：dist/js/brandTakeRatesData.js
+##  图表配置在dist/js/echart2.js   图表一生成需要配置json文件json文件格式搬的echarts上的原json文件 后又动态更改的json数据test.json
+
+## 登录注册 login.js
+
+##  网页启动页面starter.html  
