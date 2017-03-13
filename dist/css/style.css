@@ -81,7 +81,7 @@
 	top:-150px;*/
 }
 .item {
-    width: 49%;
+    width: 100%;
     height: 640px;
     background: #ffffff;
     border-width: 1px;
@@ -90,12 +90,9 @@
     border-radius: 8px;
     margin: 15px 0 18px 0;
     padding: 20px 20px 20px 20px;
-    float: left;
 	overflow: hidden;    
 }
-.item+.item{
-	margin-left: 2%;
-}
+
 /* logo */
 .mainLogo {
     -webkit-transition: width .3s ease-in-out;
