@@ -6,6 +6,8 @@ var indexPage={
         oRegInput : $("._input_reg"),
         oBtnLoginIn : $("#loginIn"),
         oBtnRegister : $("#register"),
+        oUserLoginName :document.getElementById("loginUser").value,
+        oUserRegName : document.getElementById("regUser").value,
         init:function(){
         	var that = this ;
         	$("input").focus(function(){
@@ -27,7 +29,7 @@ var indexPage={
             this.oBtnRegister.click(function(){
             	that.clickReg();
             })
-            
+            document.getElementById("userName").innerHTML =11111 //localStorage.getItem("userName");
            
         },
         onLoginBlur:function(oInput){
@@ -102,7 +104,9 @@ var indexPage={
        			}
        		}
        		//-------------------------------------------------------发送请求登录成功
-       		alert("登录成功")
+       		alert("登录成功");
+       		localStorage.setItem("userName",document.getElementById("loginUser").value);
+       		document.getElementById("userName").innerHTML = document.getElementById("loginUser").value;
        		$("#myModal").fadeOut(500);
        		$(".modal-backdrop").fadeOut(500);
        		$(".userLoginMenu").hide()
@@ -121,6 +125,9 @@ var indexPage={
        		}
        		//---------------------发送请求--------------------------------------------------
        		alert("注册成功")
+       		localStorage.setItem("userName",document.getElementById("regUser").value)
+       		console.log(this.oUserRegName)
+       		document.getElementById("userName").innerHTML =document.getElementById("regUser").value;
        		$("#myModal").fadeOut(500)
        		$(".modal-backdrop").fadeOut(500);
        		$(".userLoginMenu").hide()

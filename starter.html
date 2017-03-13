@@ -85,8 +85,13 @@ desired effect
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li class="successLogin">
-          	<a ><span class="hidden-xs" >admin1</span></a>  
+          	
+          	<a ><span class="hidden-xs" id="userName" >admin1</span></a>
           	<!--用户名称-->
+          	<div class="userCenter">
+	          	<a data-toggle="modal" data-target="#userChangeType" id="userCenter"><span>用户中心</span></a>
+	          	<a  id="quitLogin"><span>退出登录</span></a>
+          	</div>
           </li>
         </ul>
     </nav>
@@ -557,6 +562,20 @@ desired effect
   </div><!-- /.modal -->
 </div>
 <!-- REQUIRED JS SCRIPTS -->
+
+<!--类型选择模态框-->
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="userChangeType" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="_login-wrap">
+        <div class="_login-html">
+        		<!--类型选择模态框-->
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
+</div>
 
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
