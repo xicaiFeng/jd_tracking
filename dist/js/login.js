@@ -135,3 +135,8 @@ var indexPage={
        }
     }
     indexPage.init();
+    
+
+$("#userCenter").click(function(){
+	
+})
